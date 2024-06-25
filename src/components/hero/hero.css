@@ -1,0 +1,17 @@
+.hero{
+    background-image: url('../../imgs/hero-desktop.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+
+
+@media screen and (max-width:769px) {
+    .hero{
+        margin-top: 80px;
+        background-position: center;
+    }
+    
+}
