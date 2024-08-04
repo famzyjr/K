@@ -1,0 +1,18 @@
+.dual{
+    display: flex;
+    flex-direction: row;
+     margin-top: 100px;
+}
+
+.dual img{
+    width: 50%;
+}
+
+.dual-text h3{
+
+}
+
+.dual-text{
+    text-align: center;
+    margin: 20px;
+}

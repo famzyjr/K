@@ -1,0 +1,25 @@
+.item-con a{
+border-bottom: 20px;
+color: #C27407;
+text-decoration: none;
+border-bottom: 3px solid ;
+font-size: 25px;
+margin: 20px;
+}
+
+.item-con{
+ text-align: center;
+}
+
+.icon{
+max-width: 150px;
+}
+.icon:hover{
+color: #C27407;
+cursor: pointer;
+}
+.item-container:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+

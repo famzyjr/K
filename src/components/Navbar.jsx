@@ -4,11 +4,10 @@ import "./NavbarStyles.css";
 import logo from "../imgs/logo.png"
 import logo2 from "../imgs/logo2.png"
 import { Link } from "react-router-dom";
-
+import { FaBars } from "react-icons/fa6";
+import { IoClose } from "react-icons/io5";
 function Navbar() {
   const [clicked, setClicked] = useState(false)
-  
-
   const handleClick=()=>{
     setClicked(clicked => !clicked)
   }
@@ -22,22 +21,21 @@ function Navbar() {
         <div>
           <ul id="navbar" className={clicked ? "navbar active" : "navbar"}>
             <li>
-            <Link className="active" to='/'> Home</Link>
+            <Link className="active" to='/'>Home</Link>
             </li>
             <li>
-              <a href="index.html">Shop</a>
+             <Link to='/Kaftan'>Kaftan</Link>
             </li>
             <li>
-              <a href="index.html">About</a>
+            <Link to='/Agbada'>Agbada</Link>
             </li>
             <li>
             <Link  to='/h'>Contact</Link>
             </li>
           </ul>
         </div>
-
         <div id="mobile" onClick={handleClick}>
-          <i id="bar" className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+            {clicked ? <IoClose /> :  <FaBars />}
         </div>
       </nav>
     </>
